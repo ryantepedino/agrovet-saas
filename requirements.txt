@@ -5,7 +5,8 @@ Pillow
 numpy
 opencv-python-headless
 paddleocr
-paddlepaddle==2.5.2
+https://paddle-wheel.bj.bcebos.com/2.5.2/linux/linux-cp312-cp312-manylinux_2_17_x86_64.whl
+
 easyocr
 pytesseract
 reportlab

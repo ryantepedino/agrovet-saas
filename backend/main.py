@@ -25,7 +25,7 @@ app.add_middleware(
 # ==========================================================
 # 🧠 Motores OCR (Paddle + EasyOCR + Tesseract)
 # ==========================================================
-paddle_engine = PaddleOCR(use_angle_cls=True, lang='pt',)
+paddle_engine = PaddleOCR(use_angle_cls=True, lang='pt')
 easy_engine = easyocr.Reader(['pt', 'en'], gpu=False)
 
 

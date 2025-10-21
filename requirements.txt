@@ -4,3 +4,13 @@ matplotlib
 numpy
 pillow
 reportlab
+uvicorn
+fastapi
+pydantic
+pillow
+numpy
+opencv-python-headless
+paddleocr
+easyocr
+reportlab
+streamlit

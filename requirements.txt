@@ -1,7 +1,7 @@
 fastapi
-uvicorn
+uvicorn[standard]
 pydantic
-pillow
+Pillow
 numpy
 opencv-python-headless
 paddleocr

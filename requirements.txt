@@ -6,5 +6,6 @@ numpy
 opencv-python-headless
 paddleocr
 easyocr
+pytesseract
 reportlab
 streamlit

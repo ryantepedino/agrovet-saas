@@ -4,9 +4,6 @@ pydantic
 Pillow
 numpy
 opencv-python-headless
-paddleocr
-https://paddle-wheel.bj.bcebos.com/2.5.2/paddlepaddle-2.5.2-cp311-cp311-manylinux_2_17_x86_64.whl
-
 easyocr
 pytesseract
 reportlab

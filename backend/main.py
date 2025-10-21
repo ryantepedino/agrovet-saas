@@ -6,7 +6,8 @@ from datetime import datetime
 from PIL import Image, ImageEnhance, ImageFilter
 import numpy as np, cv2
 import pytesseract
-from paddleocr import PaddleOCR
+# from paddleocr import PaddleOCR
+from easyocr import Reader
 import easyocr
 
 # ==========================================================
@@ -25,7 +26,7 @@ app.add_middleware(
 # ==========================================================
 # 🧠 Motores OCR (Paddle + EasyOCR + Tesseract)
 # ==========================================================
-paddle_engine = PaddleOCR(use_angle_cls=True, lang='pt')
+ocr_engine = Reader(['pt'], gpu=False)
 easy_engine = easyocr.Reader(['pt', 'en'], gpu=False)
 
 
@@ -61,7 +62,7 @@ def extract_text_from_image(image_bytes):
 
     # 1️⃣ PaddleOCR
     try:
-        results = paddle_engine.ocr(processed_bytes)
+        results =ocr_engine.readtext(processed_bytes)
         if results and len(results[0]) > 0:
             text = " ".join([line[1][0] for line in results[0]])
     except Exception:

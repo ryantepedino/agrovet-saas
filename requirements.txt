@@ -1,11 +1,5 @@
-streamlit
-pandas
-matplotlib
-numpy
-pillow
-reportlab
-uvicorn
 fastapi
+uvicorn
 pydantic
 pillow
 numpy
